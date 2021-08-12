@@ -13,6 +13,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3C1600DDCAB482F3D79D26B3 /* libPods-RNMeituan-RNMeituanTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D111A430B867DD9AE592DDF2 /* libPods-RNMeituan-RNMeituanTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C772A57226C2750A006BF837 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C772A57126C2750A006BF837 /* iconfont.ttf */; };
 		D26A60B89AA8EFB4C075CBEB /* libPods-RNMeituan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B6E8407BD27EAB96E91586 /* libPods-RNMeituan.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNMeituan/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C3D711993EEC94E46BC71D1 /* Pods-RNMeituan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMeituan.release.xcconfig"; path = "Target Support Files/Pods-RNMeituan/Pods-RNMeituan.release.xcconfig"; sourceTree = "<group>"; };
 		A6D2BD3AED7F0C10DB219E6C /* Pods-RNMeituan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMeituan.debug.xcconfig"; path = "Target Support Files/Pods-RNMeituan/Pods-RNMeituan.debug.xcconfig"; sourceTree = "<group>"; };
+		C772A57126C2750A006BF837 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = iconfont.ttf; path = ../src/assets/iconfonts/iconfont.ttf; sourceTree = "<group>"; };
 		D111A430B867DD9AE592DDF2 /* libPods-RNMeituan-RNMeituanTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNMeituan-RNMeituanTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F1BA6DD9CD030F8C446D6708 /* Pods-RNMeituan-RNMeituanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMeituan-RNMeituanTests.release.xcconfig"; path = "Target Support Files/Pods-RNMeituan-RNMeituanTests/Pods-RNMeituan-RNMeituanTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				C772A57126C2750A006BF837 /* iconfont.ttf */,
 				13B07FAE1A68108700A75B9A /* RNMeituan */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNMeituanTests */,
@@ -145,7 +148,6 @@
 				6869812511A94BD46EB89580 /* Pods-RNMeituan-RNMeituanTests.debug.xcconfig */,
 				F1BA6DD9CD030F8C446D6708 /* Pods-RNMeituan-RNMeituanTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -243,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C772A57226C2750A006BF837 /* iconfont.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);

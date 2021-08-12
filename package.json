@@ -12,6 +12,7 @@
   "dependencies": {
     "@ant-design/react-native": "^4.2.0",
     "@react-native-community/cameraroll": "^4.0.4",
+    "@react-native-community/geolocation": "^2.0.2",
     "@react-native-community/segmented-control": "^2.2.2",
     "@react-native-community/slider": "^3.0.3",
     "@react-navigation/bottom-tabs": "^6.0.1",

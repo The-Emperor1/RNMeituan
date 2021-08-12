@@ -1,0 +1,149 @@
+{
+  "id": "2733633",
+  "name": "RNMeituan",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18166589",
+      "name": "美团外卖",
+      "font_class": "meituan",
+      "unicode": "e8c9",
+      "unicode_decimal": 59593
+    },
+    {
+      "icon_id": "5318209",
+      "name": "酒店",
+      "font_class": "jiudian",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "18166512",
+      "name": "餐具,刀叉,外卖,美食",
+      "font_class": "tableware-full",
+      "unicode": "e8c6",
+      "unicode_decimal": 59590
+    },
+    {
+      "icon_id": "18564815",
+      "name": "休闲 飞机 打飞机",
+      "font_class": "xiuxian",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "13332699",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "1450442",
+      "name": "电商",
+      "font_class": "dianshang",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "3892248",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "9606878",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "12897860",
+      "name": "上",
+      "font_class": "shang-",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "12897864",
+      "name": "下",
+      "font_class": "xia-",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "12897867",
+      "name": "右",
+      "font_class": "you-",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "12897868",
+      "name": "左",
+      "font_class": "zuo-",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "17608610",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "1240769",
+      "name": "录音",
+      "font_class": "luyin",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "1920285",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "6077726",
+      "name": "发票 (1)",
+      "font_class": "fapiao",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "11594395",
+      "name": "扫一扫",
+      "font_class": "saoyisao",
+      "unicode": "e6b3",
+      "unicode_decimal": 59059
+    },
+    {
+      "icon_id": "15112761",
+      "name": "卡券",
+      "font_class": "kaquan",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "17814544",
+      "name": "二维码",
+      "font_class": "erweima",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "23453016",
+      "name": "自行车",
+      "font_class": "zihangche-copy",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    }
+  ]
+}
