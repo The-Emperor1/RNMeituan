@@ -4,9 +4,10 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import SplashScreen from "../screens/Splash"
 import MainScreen from '../screens/Main'
+import ScannerScreen from '../screens/ScannerScreen'
 import TackOutScreen from '../screens/TakeOut'
 
-class Navigation extends Component {
+class Navigator extends Component {
 
     constructor() {
         super();
@@ -37,6 +38,9 @@ class Navigation extends Component {
                             component={MainScreen}
                             options={{headerShown: false}}/>
                         <Stack.Screen name="TackOut" component={TackOutScreen} />
+                        <Stack.Screen 
+                            name="ScannerScreen" 
+                            component={ScannerScreen}/>
                     </Stack.Navigator>
                 </NavigationContainer>
             </SafeAreaProvider>
@@ -49,4 +53,4 @@ class Navigation extends Component {
     }
 }
 
-export default Navigation
+export default Navigator

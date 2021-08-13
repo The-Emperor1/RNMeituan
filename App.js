@@ -1,13 +1,14 @@
 import React, { Component, Fragment } from 'react'
-import AppScreen from './src/navigation/index'
+import AppScreen from '@/navigator'
 import { SafeAreaView } from 'react-native-safe-area-context'
+import Theme from './src/common/Theme'
 
 class App extends Component {
 
     render() {
         return (
             <Fragment>
-                <SafeAreaView style={{flex: 0, backgroundColor: '#ffc300'}}></SafeAreaView>
+                <SafeAreaView style={{flex: 0, backgroundColor: Theme.primary}}></SafeAreaView>
                 <SafeAreaView style={{flex: 1, backgroundColor: '#fffff'}}>
                     <AppScreen/>
                 </SafeAreaView>

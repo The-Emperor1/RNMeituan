@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet, TextInput } from 'react-native'
-import Geolocation from '@react-native-community/geolocation';
+import Geolocation from '@react-native-community/geolocation'
 import { Popover } from '@ant-design/react-native'
+import Theme from '@/common/Theme'
+import { fetchPosition } from '@/libs/api'
 
 class Header extends Component {
     constructor(props) {
@@ -11,13 +13,16 @@ class Header extends Component {
         }
     }
 
-    getCurCity = () => {
+    initCurCity = () => {
         Geolocation.getCurrentPosition(
-            (position) => {
-              const initialPosition = position
-              const { longitude } = initialPosition.coords
-              const { latitude } = initialPosition.coords
-              return '';
+            async (position) => {
+                const { longitude, latitude, altitude } = position.coords;
+                const {
+                    code, 
+                    data: {city = '-'} = {}
+                } = await fetchPosition(`${latitude},${longitude},${altitude}`);
+
+                this.setState({curCity: city});
             },
             (error) => {
                 return '';
@@ -25,15 +30,16 @@ class Header extends Component {
           )
     }
 
-    componentDidMount() {   
-        this.setState({
-            curCity: this.getCurCity(),
-        })
+    componentDidMount() { 
+        this.initCurCity();
     }
 
-    onPopoverSelect(value) {
+    onPopoverSelect = (value) => {
+        const { navigation } = this.props;
+
         switch(value) {
             case 'Scan':
+                navigation.navigate('ScannerScreen')
                 break;
             case 'QR':
                 break;
@@ -62,11 +68,13 @@ class Header extends Component {
     }
 
     render() {
+        const { curCity } = this.state;
+
         return (
             <View style={styles.headerContainer}>
                 <View>
                     <View style={{flexDirection: 'row'}}>
-                        <Text style={{fontSize: 16, fontWeight: '800', alignSelf: 'center'}}>上海</Text>
+                        <Text style={{fontSize: 16, fontWeight: '800', alignSelf: 'center'}}>{curCity}</Text>
                         <Text style={[styles.iconStyle, {fontSize: 16}]}>{'\ue618'}</Text>
                     </View>
                     <Text style={{fontSize: 10, marginTop: 6}}>多云 30℃</Text>
@@ -102,7 +110,7 @@ const styles = StyleSheet.create({
         paddingBottom: 5,
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#ffc300',
+        backgroundColor: Theme.primary,
     },
     inputWrap: {
         flexDirection: 'row',
