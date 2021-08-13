@@ -3,7 +3,8 @@ import { View, Text, StyleSheet, TextInput } from 'react-native'
 import Geolocation from '@react-native-community/geolocation'
 import { Popover } from '@ant-design/react-native'
 import Theme from '@/common/Theme'
-import { fetchPosition } from '@/libs/api'
+// import { fetchPosition } from '@/libs/api'
+import {connect} from 'react-redux';
 
 class Header extends Component {
     constructor(props) {
@@ -15,14 +16,9 @@ class Header extends Component {
 
     initCurCity = () => {
         Geolocation.getCurrentPosition(
-            async (position) => {
+            (position) => {
                 const { longitude, latitude, altitude } = position.coords;
-                const {
-                    code, 
-                    data: {city = '-'} = {}
-                } = await fetchPosition(`${latitude},${longitude},${altitude}`);
-
-                this.setState({curCity: city});
+                this.props.fetchPosition(`${latitude},${longitude},${altitude}`);
             },
             (error) => {
                 return '';
@@ -68,13 +64,13 @@ class Header extends Component {
     }
 
     render() {
-        const { curCity } = this.state;
+        const { city } = this.props;
 
         return (
             <View style={styles.headerContainer}>
                 <View>
                     <View style={{flexDirection: 'row'}}>
-                        <Text style={{fontSize: 16, fontWeight: '800', alignSelf: 'center'}}>{curCity}</Text>
+                        <Text style={{fontSize: 16, fontWeight: '800', alignSelf: 'center'}}>{city}</Text>
                         <Text style={[styles.iconStyle, {fontSize: 16}]}>{'\ue618'}</Text>
                     </View>
                     <Text style={{fontSize: 10, marginTop: 6}}>多云 30℃</Text>
@@ -160,4 +156,17 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Header
+
+const mapStateToProps = (state) => {
+    const { root: { position } } = state
+    return { 
+        city: position.city, 
+    }
+}
+const mapDispatchToProps = (dispatch) => {
+    return {
+      fetchPosition: (data) => dispatch.root.fetchPosition(data),
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header)
