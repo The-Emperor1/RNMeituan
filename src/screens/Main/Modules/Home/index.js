@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { View, Button } from 'react-native'
 import MenuBar from './components/MenuBar'
+import FeatureCarousel from './components/FeatureCarousel'
 
 class Home extends Component {
     constructor(props) {
@@ -13,9 +14,7 @@ class Home extends Component {
         return(
             <View>
                 <MenuBar navigation={navigation}/>
-                <Button title="go to TackOut" onPress={() => {
-                    navigation.navigate('TackOut')
-                }}/>
+                <FeatureCarousel/>
             </View>
         )
     }

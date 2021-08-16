@@ -21,9 +21,6 @@ instance.interceptors.response.use(
   (response) => {
     if (response.status === 200) {
       // 接口返回session.timeout时认为登录状态过期，跳转至登录页
-      if (response.data.code === 'session.timeout') {
-        window.location.replace(`${basePath}login.html`);
-      }
       return Promise.resolve(response.data);
     }
     return Promise.reject(response.data);

@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         paddingTop: 10,
-        paddingBottom: 30,
+        paddingBottom: 10,
         backgroundColor: Theme.primary,
     },
     itemWrap: {

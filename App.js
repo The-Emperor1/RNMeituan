@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import Theme from './src/common/Theme'
 import { Provider } from 'react-redux'
 import store from '@/libs/store'
+import './src/screens/Main/Modules/Home/libs/mock'
 
 class App extends Component {
 

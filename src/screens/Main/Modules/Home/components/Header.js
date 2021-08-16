@@ -3,8 +3,7 @@ import { View, Text, StyleSheet, TextInput } from 'react-native'
 import Geolocation from '@react-native-community/geolocation'
 import { Popover } from '@ant-design/react-native'
 import Theme from '@/common/Theme'
-// import { fetchPosition } from '@/libs/api'
-import {connect} from 'react-redux';
+import {connect} from 'react-redux'
 
 class Header extends Component {
     constructor(props) {

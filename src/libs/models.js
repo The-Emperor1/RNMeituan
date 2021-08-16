@@ -1,4 +1,5 @@
 import { fetchPosition } from './api'
+export * from '@/screens/Main/Modules/Home/libs/models'
 
 export const root = {
     state: {
