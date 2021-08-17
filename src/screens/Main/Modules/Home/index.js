@@ -12,7 +12,7 @@ class Home extends Component {
 
         const { navigation } = this.props;
         return(
-            <View>
+            <View style={{backgroundColor: '#fff'}}>
                 <MenuBar navigation={navigation}/>
                 <FeatureCarousel/>
             </View>

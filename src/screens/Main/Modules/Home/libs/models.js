@@ -6,82 +6,107 @@ export const home = {
             {
                 name: 'TackOut',
                 title: '外卖',
-                icon: '\ue8c9',
+                iconName: 'meituanwaimai',
             },
             {
                 name: 'Food',
                 title: '美食',
-                icon: '\ue8c6',
+                iconName: 'meishi',
             },
             {
                 name: 'Hotel',
                 title: '酒店/民宿',
-                icon: '\ue687',
+                iconName: 'jiudian1',
             },
             {
                 name: 'Entertainment',
                 title: '休闲/玩乐',
-                icon: '\ue616',
+                iconName: 'xiuxianlvyou',
             },
             {
                 name: 'Movie',
                 title: '电影/演出',
-                icon: '',
+                iconName: 'maoyan',
             },
             {
                 name: 'TackOut',
                 title: '打车',
-                icon: '',
+                iconName: 'meituan_dache',
             },
             {
                 name: 'TackOut',
                 title: '美团买菜',
-                icon: '',
+                iconName: '01maicaizuofan',
             },
             {
                 name: 'TackOut',
                 title: '超市/便利店',
-                icon: '',
+                iconName: 'chaoshi',
             },
             {
                 name: 'TackOut',
                 title: '买药',
-                icon: '',
+                iconName: 'gouyaoyindao',
             },
             {
                 name: 'TackOut',
                 title: '火车票/机票',
-                icon: '',
+                iconName: 'huochepiaojipiao',
             },
             {
                 name: 'TackOut',
                 title: '美团优选',
-                icon: '',
+                iconName: 'meituanyouxuan',
             },
             {
                 name: 'TackOut',
                 title: '免费领水果',
-                icon: '',
+                iconName: 'guoshu',
             },
             {
                 name: 'TackOut',
                 title: '天天现金券',
-                icon: '',
+                iconName: 'xianjinquan',
             },
             {
                 name: 'TackOut',
                 title: '医疗/牙科',
-                icon: '',
+                iconName: 'yiliao',
             },
             {
                 name: 'TackOut',
                 title: '跑腿',
-                icon: '',
+                iconName: 'paotui',
             },
             {
                 name: 'TackOut',
                 title: '按摩/足疗',
-                icon: '',
+                iconName: 'anmozuliao',
+            },
+            {
+                name: 'TackOut',
+                title: '汗蒸',
+                iconName: 'hanzhengwenquan',
+            },
+            {
+                name: 'TackOut',
+                title: 'KTV',
+                iconName: 'fujinshangjia-KTV2',
+            },
+            {
+                name: 'TackOut',
+                title: '玩一玩',
+                iconName: 'youxi',
+            },
+            {
+                name: 'TackOut',
+                title: '结婚/摄影',
+                iconName: 'xinaixin1',
+            },
+            {
+                name: 'TackOut',
+                title: '生活服务',
+                iconName: 'shenghuofuwu',
             },
             
         ],  // 功能点

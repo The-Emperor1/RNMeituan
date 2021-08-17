@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     },
     icon: {
         fontFamily: 'iconfont',
-        fontSize: 42
+        fontSize: 36
         
     },
     text: {

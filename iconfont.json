@@ -1,0 +1,8 @@
+{
+    "symbol_url": "//at.alicdn.com/t/font_2733633_efzypswliut.js",
+    "use_typescript": false,
+    "save_dir": "./src/assets/iconfontSVG",
+    "trim_icon_prefix": "icon",
+    "default_icon_size": 18,
+    "local_svgs": ""  // npx iconfont-rn
+}

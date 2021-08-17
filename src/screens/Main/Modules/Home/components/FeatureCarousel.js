@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { WingBlank, Carousel } from '@ant-design/react-native'
 import { connect } from 'react-redux'
 import { View, Text, StyleSheet } from 'react-native'
-
+import IconFont from '@/assets/iconfontSVG';
 class FeatureCarousel extends Component {
 
 
@@ -33,7 +33,7 @@ class FeatureCarousel extends Component {
                 {
                     featureArr.map(item => {
                         return <View key={item.name} style={styles.itemWrap}>
-                            <Text style={styles.itemIcon}>{item.icon}</Text>
+                            <IconFont name={item.iconName} size={26}/>
                             <Text style={styles.itemText}>{item.title}</Text>
                         </View>
                         
@@ -71,22 +71,22 @@ class FeatureCarousel extends Component {
 const styles = StyleSheet.create({
     carouselWrap: {
         width: '100%', 
-        height: 200, 
+        height: 210, 
     },
     carousel: {
         flexDirection: 'row', 
         flexWrap: 'wrap',
-        paddingTop: 10,
-        paddingBottom: 10,
+        paddingTop: 12,
+        paddingBottom: 12,
     },
 
     itemWrap: {
         justifyContent: 'center',
         alignItems: 'center',
-        width: '20%'
+        width: '20%',
+        marginBottom: 12
     },
     itemIcon: {
-        fontSize: 32,
         fontFamily: 'iconfont'
     },
     itemText: {
