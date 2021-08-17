@@ -10,11 +10,10 @@ class FeatureCarousel extends Component {
         const features = this.props.features;
         const piceNum = 15;
         const carouselDate = [];
-        
         for(let i=0, len = features.length; i < len;) {
             if(parseInt((len-i)/piceNum) > 0) {
                 carouselDate.push(features.slice(i, i+piceNum));
-                i =+ piceNum;
+                i += piceNum;
             }else {
                 carouselDate.push(features.slice(i));
                 i = len;
