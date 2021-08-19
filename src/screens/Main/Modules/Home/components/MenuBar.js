@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet, TouchableWithoutFeedback } from 'react-native'
-import Theme from '@/common/Theme';
+import { Color } from '@/common/Theme';
 
 export default class MenuBar extends Component {
     constructor(props) {
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         paddingTop: 10,
         paddingBottom: 10,
-        backgroundColor: Theme.primary,
+        backgroundColor: Color.primary,
     },
     itemWrap: {
         alignItems: 'center'

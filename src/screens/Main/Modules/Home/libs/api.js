@@ -7,3 +7,9 @@ export function fetchFeatures() {
 
     return Request({ url });
 }
+
+export function fetchOptimizationList() {
+    const url = `${HOST}/api/optimizationList`;
+
+    return Request({ url });
+}

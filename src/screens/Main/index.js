@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import HomeScreen from './Modules/Home'
 import HomeHeader from './Modules/Home/components/Header'
 import { Text } from 'react-native'
-import Theme from '../../common/Theme'
+import { Color } from '../../common/Theme'
 
 
 const Tab = createBottomTabNavigator();
@@ -32,7 +32,7 @@ export default class MainScreen extends PureComponent {
         
         return ({
             tabBarIcon: ({focused, color, size}) => {
-                return <Text style={{fontFamily: 'iconfont', fontSize: 22, color: focused ? Theme.primary : '#000'}}>{iconName}</Text>
+                return <Text style={{fontFamily: 'iconfont', fontSize: 22, color: focused ? Color.primary : '#000'}}>{iconName}</Text>
             },
             tabBarLabelStyle: {
                 color: '#333'

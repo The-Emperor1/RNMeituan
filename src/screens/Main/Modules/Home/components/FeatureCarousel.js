@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { WingBlank, Carousel } from '@ant-design/react-native'
 import { connect } from 'react-redux'
 import { View, Text, StyleSheet } from 'react-native'
-import IconFont from '@/assets/iconfontSVG';
+import IconFont from '@/assets/iconfontSVG'
+import { Color } from '@/common/Theme'
 class FeatureCarousel extends Component {
 
 
@@ -23,16 +24,17 @@ class FeatureCarousel extends Component {
         return carouselDate;
     }
 
-    renderCarouselContent = (featureArr) => {
+    renderCarouselContent = (featureArr, id) => {
         return featureArr.length > 0 ? 
             <View
+                key={id}
                 autoplay={false}
                 style={styles.carousel}
             >
                 {
                     featureArr.map(item => {
                         return <View key={item.name} style={styles.itemWrap}>
-                            <IconFont name={item.iconName} size={26}/>
+                            <IconFont name={item.iconName} size={30}/>
                             <Text style={styles.itemText}>{item.title}</Text>
                         </View>
                         
@@ -50,10 +52,12 @@ class FeatureCarousel extends Component {
                 <Carousel
                     autoplay={false}
                     style={styles.carouselWrap}
+                    dotStyle={{width: 6, height: 6}}
+                    dotActiveStyle={{backgroundColor: Color.primary}}
                 >
                     {
-                        carouselDate.map(item => {
-                            return this.renderCarouselContent(item)
+                        carouselDate.map((item, key) => {
+                            return this.renderCarouselContent(item, key);
                         })
                     }
                 </Carousel>

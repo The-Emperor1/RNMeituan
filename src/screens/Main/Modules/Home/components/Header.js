@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { View, Text, StyleSheet, TextInput } from 'react-native'
 import Geolocation from '@react-native-community/geolocation'
 import { Popover } from '@ant-design/react-native'
-import Theme from '@/common/Theme'
+import { Color } from '@/common/Theme'
 import {connect} from 'react-redux'
 
 class Header extends Component {
@@ -63,6 +63,7 @@ class Header extends Component {
     }
 
     render() {
+        return null
         const { city } = this.props;
 
         return (
@@ -105,7 +106,7 @@ const styles = StyleSheet.create({
         paddingBottom: 5,
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: Theme.primary,
+        backgroundColor: Color.primary,
     },
     inputWrap: {
         flexDirection: 'row',
