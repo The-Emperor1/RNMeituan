@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
 import { connect } from 'react-redux'
+import { Color } from '@/common/Theme'
 class PromotionSegment extends Component {
 
     renderGrid = () => {
@@ -18,26 +19,30 @@ class PromotionSegment extends Component {
     
     render() {
         return (
-            <LinearGradient 
-                start={{x: 0, y: 0}} end={{x: 1, y: 0}}
-                colors={['#ffc300', '#fffda3']}
-                style={styles.container}>
-                <View style={styles.headerWrap}>
-                    <Image
-                        style={styles.titleImage}
-                        source={require('@/assets/images/meituan/youxuan.png')}
-                        />
-                    <View style={[styles.tagWrap, {
-                        backgroundColor: '#8c6900',
-                    }]}>
-                        <Text style={[styles.tag, {color: '#fff', }]}>次日</Text>
+            <View>
+                <View style={styles.xArrow} />
+                <LinearGradient 
+                    start={{x: 0, y: 0}} end={{x: 1, y: 0}}
+                    colors={['#ffc300', '#fffda3']}
+                    style={styles.container}>
+                    <View style={styles.headerWrap}>
+                        <Image
+                            style={styles.titleImage}
+                            source={require('@/assets/images/meituan/youxuan.png')}
+                            />
+                        <View style={[styles.tagWrap, {
+                            backgroundColor: '#8c6900',
+                        }]}>
+                            <Text style={[styles.tag, {color: '#fff', }]}>次日</Text>
+                        </View>
+                        <View style={[styles.tagWrap, {
+                            backgroundColor: '#fff',
+                        }]}><Text style={[styles.tag, {color: '#8c6900'}]}>自提</Text></View>
                     </View>
-                    <View style={[styles.tagWrap, {
-                        backgroundColor: '#fff',
-                    }]}><Text style={[styles.tag, {color: '#8c6900'}]}>自提</Text></View>
-                </View>
-                {this.renderGrid()}
-            </LinearGradient>
+                    {this.renderGrid()}
+                </LinearGradient>
+            </View>
+
         )
     }
 
@@ -47,6 +52,19 @@ class PromotionSegment extends Component {
 }
 
 const styles = StyleSheet.create({
+    xArrow: {
+        position: 'absolute',
+        left: 36,
+        top: -28,
+        width: 0,
+        height: 0,
+        borderWidth: 15,
+        borderTopColor: 'transparent',
+        borderRightColor: 'transparent',
+        borderLeftColor: 'transparent',
+        borderBottomColor: Color.primary,
+    }, 
+    
     container: {
         height: 240,
         marginHorizontal: 10,
